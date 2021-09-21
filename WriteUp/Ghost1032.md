@@ -24,7 +24,7 @@ moe=flag
 解法一:打到50000分(???
 解法二:用burpsuite抓包 将score修改至大于50000
 ```
-### Web_In
+### Web_Inc
 
 要求a!=b且 md5(a)===md5(b)</br>
 即a和b类型相同 MD5值相同但值不同</br>
