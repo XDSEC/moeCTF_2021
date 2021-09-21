@@ -1,0 +1,9 @@
+ version: '3'
+ services:
+     python:
+         build: .
+         container_name: "moectf2021web1"
+         ports:
+             - "23456:8081"
+         volumes:
+             - "$PWD:/var/www/html/"
