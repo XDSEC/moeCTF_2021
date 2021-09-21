@@ -1,0 +1,2 @@
+flag : moectf{S0_As_I_prAy_Un1imited_B1ade_WOrks---E1m1ya_Shiro}
+raw input : 8291767138932581849755263447186268341129653538127
