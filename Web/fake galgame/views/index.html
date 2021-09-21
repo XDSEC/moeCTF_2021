@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        .myForm {
+
+        }
+    </style>
+    <script src="/static/jquery.min.js"></script>
+</head>
+<body>
+<div>你有十点属性值可以用来分配，合理分配属性去挑战魔王吧！！！</div>
+<!--如果你将某一项属性值设为0，你将没有这项属性-->
+<form class="myForm">
+    <div>
+        <label for="health">生命值：</label>
+        <input id="health" type="text">
+    </div>
+    <div>
+        <label for="attack">攻击力：</label>
+        <input id="attack" type="text">
+    </div>
+    <div>
+        <label for="armor">护甲：</label>
+        <input id="armor" type="text">
+    </div>
+    <button type="button" id="submit">创建角色</button>
+</form>
+<script type="text/javascript">
+    $(function () {
+        $("#submit").on('click', function () {
+            $.ajax({
+                type: "POST",
+                url: "/api/fight",
+                contentType: "application/json; charset=utf-8",
+                dataType: 'json',
+                data: JSON.stringify({
+                    attributes: {
+                        health: parseInt($("#health").val()),
+                        attack: parseInt($("#attack").val()),
+                        armor: parseInt($("#armor").val()),
+                    }
+                }),
+                success: function (res) {
+                    if (res.status === 200) {
+                        alert(res.result);
+                    } else if(res.status === 403){
+                        alert("Invalid input, please try again");
+                    } else if(res.status === 500){
+                        alert("Json data only!");
+                    }
+                },
+            })
+        })
+    });
+</script>
+</body>
+</html>
