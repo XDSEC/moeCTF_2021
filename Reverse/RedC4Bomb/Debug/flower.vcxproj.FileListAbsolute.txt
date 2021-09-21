@@ -1,2 +1,0 @@
-A:\QuestionBank\MoeCTF2021\flower\Debug\flower.exe
-A:\QuestionBank\MoeCTF2021\3_flower\Debug\flower.exe
