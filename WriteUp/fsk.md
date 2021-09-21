@@ -9,6 +9,11 @@
 
 **题目全部在 `Windows 7` 环境下做出**
 
+已经同步在俺的博客力
+
+[MoeCTF 2021 WriteUp - 康师傅 (ksfu.top)](https://blog.ksfu.top/MoeCTF-2021-WriteUp/)
+
+
 ## 目录
 
 ### Crypto（4/14）
