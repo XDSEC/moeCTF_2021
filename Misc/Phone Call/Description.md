@@ -19,3 +19,7 @@ with open('./dtmf.bin', 'wb') as out:
     out.write(file_dtmf_bin)
 ```
 
+## 题解
+
+请查看本仓库下的远程链接：DTMF-Challenges
+
