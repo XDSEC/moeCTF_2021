@@ -326,11 +326,31 @@ echo $a;
 <a href="https://www.leavesongs.com/PENETRATION/javascript-prototype-pollution-attack.html">[参考博客]</a>
 
 ## Pwn
-
+...
 ## Re
-
+...
 ## Misc
+### 社 工 题
+Google搜索```Noah的博客 "CTF"```</br>
+意外发现hs的blog 友链里找到Noah的第一个博客</br>
+```https://noahtie.github.io/```</br>
+在关于界面提到</br>
+<blockquote>我还有一个lofter博客，其中主要是TRPG方面的文章</blockquote>
 
+找到lofter博客
+
+```
+https://masternoah.lofter.com/post/31fdff01_1ccc468af
+``` 
+又在里面翻到了另一个trpg博客</br>
+```https://noahbox.github.io```
+留言簿里有HakcerHS的留言 提示查看github上的repositories</br>
+前往github搜索noahbox 搜到账户MasterNoah</br>
+有一个叫HackedbyHS的repo
+repo下有三个branch 在NoahBox-patch-1里找到一串摩斯电码</br>
+ 解码得到flag
+ >写的WP很轻松 实际上用了好久好久好久好久好久好久好久((((
 ## Crypto
-
->...
+...
+>...整场CTF打下来发现基本上没啥会的</br>
+>多年网络冲浪经验立大功
